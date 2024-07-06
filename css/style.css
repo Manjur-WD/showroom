@@ -115,7 +115,7 @@ main {
         padding-top: 0 !important;
     }
 
-    .form-section label {
+    .form-section label, .form-section input,.form-section select {
         font-size: 12px;
     }
 
