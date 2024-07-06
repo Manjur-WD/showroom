@@ -59,7 +59,7 @@ main {
 }
 
 .form-section input::placeholder,
-.form-section select{
+.form-section select {
     color: black;
     text-transform: uppercase;
 }
@@ -97,4 +97,24 @@ main {
 
 .submit-btn button:active {
     background-color: #b9b9b9;
+}
+
+@media(max-width: 576px) {
+
+    .form-section {
+        margin-top: -20px;
+    }
+
+    .logo img {
+        width: 50px;
+        padding-top: 0 !important;
+    }
+
+    .form-section label {
+        font-size: 12px;
+    }
+
+    .submit-btn button{
+        font-size: 15px;
+    }
 }
