@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+@font-face {
+    font-family: TOYOTA;
+    src: url(../assets/avenir\ lt\ std\ black.otf);
+}
+
+body {
+    font-family: "Syne", sans-serif !important;
+    background: linear-gradient(white, #e6e6e6) no-repeat !important;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    padding: 20px 20px 0 0;
+    position: relative;
+}
+
+.form-section {
+    width: 90%;
+    margin: -20px auto 0 auto;
+    background: #e10a1d;
+    padding: 10px;
+    position: relative;
+    z-index: 99;
+    box-shadow: 0 0 10px #212529;
+}
+
+.form-section p {
+    background-color: #212529;
+    display: inline-block;
+    padding: 20px 60px;
+    margin-left: -50px;
+    box-shadow: 5px 5px 10px white;
+    border-radius: 0 0 20px 0;
+}
+
+.form-section .input-box {
+    padding: 5px 10px;
+}
+
+.form-section label {
+    display: block;
+    font-size: 1.2vmin;
+    font-weight: 300 !important;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.form-section input,
+.form-section select {
+    outline: none;
+    border: none;
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-section input::placeholder,
+.form-section select{
+    color: black;
+    text-transform: uppercase;
+}
+
+.form-section input[type="radio"] {
+    width: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.form-section input[type="radio"]:checked {
+    background-color: #212529;
+    border-color: white;
+}
+
+.form-check label {
+    font-size: 16px;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.submit-btn button {
+    background-color: #212529;
+    border: none;
+    font-size: 25px;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.submit-btn button:hover {
+    box-shadow: 5px 5px 0 white;
+}
+
+.submit-btn button:active {
+    background-color: #b9b9b9;
+}
