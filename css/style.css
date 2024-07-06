@@ -106,7 +106,7 @@ main {
     }
 
     .logo img {
-        width: 50px;
+        width: 50px !important;
         padding-top: 0 !important;
     }
 
