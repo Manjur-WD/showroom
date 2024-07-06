@@ -7,7 +7,7 @@
 
 body {
     font-family: "Syne", sans-serif !important;
-    background: linear-gradient(white, #e6e6e6) no-repeat !important;
+    background: linear-gradient(white, #e6e6e6de), url(../assets/images/toyota-fortuner-super-white.jpeg) no-repeat bottom/cover !important;
     height: 100vh;
 }
 
