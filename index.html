@@ -1,130 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Showroom on wheels</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/icon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom on Wheels</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./assets/images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
     <main>
-      <a href="index.html" class="logo"
-        ><img
-          src="./assets/images/Toyota-logo.png"
-          alt="logo"
-          width="200"
-          class="position-absolute pt-3"
-      /></a>
-      <section class="banner">
-        <img
-          src="./assets/images/dtc-banner-1920x775.jpg"
-          alt="banner-image"
-          class="w-100"
-        />
-      </section>
-      <section class="form-section">
-        <p class="fs-2 fw-bold text-white">
-          <i class="ri-user-6-fill me-1"></i>FILL ALL DETAILS
-        </p>
-
-        <form action="#" class="row justify-content-center px-md-5 p-3">
-          <div class="input-box col-md-3">
-            <label for="person_name">NAME</label>
-            <input type="text" placeholder="Enter Your Name" />
-          </div>
-          <div class="input-box col-md-3">
-            <label for="person_name">PHONE NUMBER </label>
-            <input type="tel" placeholder="Enter Your Mobile Number" />
-          </div>
-          <div class="input-box col-md-3">
-            <label for="person_name">EXISTING VEHICLE </label>
-            <select name="existing-vehicle" id="existing-vehicle">
-              <option value="#">Choose Option</option>
-              <option value="yes">YES</option>
-              <option value="no">NO</option>
-            </select>
-          </div>
-          <div class="input-box col-md-3">
-            <label for="person_name">IF OWNS A CAR THEN WHICH ONE </label>
-            <input type="text" placeholder="Enter Your Own Car Model" />
-          </div>
-          <div class="input-box col-md-3">
-            <label for="person_name">INTERESTED MODEL </label>
-            <select name="model-interested" id="model-interested">
-              <option value="#">Select Model</option>
-              <option value="Glanza">Glanza</option>
-              <option value="Urban Cruiser Taisor">Urban Cruiser Taisor</option>
-              <option value="Rumion">Rumion</option>
-              <option value="Innova Crysta">Innova Crysta</option>
-              <option value="Innova Hycross">Innova Hycross</option>
-              <option value="Hilux">Hilux</option>
-              <option value="Fortuner">Fortuner</option>
-              <option value="Camry">Camry</option>
-              <option value="Fortuner">Vellfire</option>
-              <option value="Fortuner">Land Cruiser 300</option>
-            </select>
-          </div>
-          <div class="input-box col-md-3">
-            <label for="person_name">DEALERSHIP </label>
-            <select name="dealership" id="dealership">
-              <option value="#">Select Here</option>
-              <option value="dealer1">Dealer 1</option>
-              <option value="dealer2">Dealer 2</option>
-            </select>
-          </div>
-          <div class="input-box col-md-3">
-            <label for="person_name">TEST DRIVE </label>
-            <select name="test-drive" id="test-drive">
-              <option value="#">Choose Option</option>
-              <option value="yes">YES</option>
-              <option value="no">NO</option>
-            </select>
-            <!-- <div class="d-flex gap-3">
-              <div class="form-check d-flex align-items-center">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault1"
-                />
-                <label class="form-check-label" for="flexRadioDefault1">
-                  YES
-                </label>
-              </div>
-              <div class="form-check d-flex align-items-center">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="flexRadioDefault"
-                  id="flexRadioDefault2"
-                  checked
-                />
-                <label class="form-check-label" for="flexRadioDefault2">
-                  NO
-                </label>
-              </div>
-            </div> -->
-          </div>
-          <div class="submit-btn text-center mt-4">
-            <button type="submit">SUBMIT</button>
-          </div>
-        </form>
-      </section>
+        <a href="index.html" class="logo">
+            <img src="./assets/images/Toyota-logo.png" alt="logo" width="200" class="position-absolute pt-3">
+        </a>
+        <section class="banner">
+            <img src="./assets/images/dtc-banner-1920x775.jpg" alt="banner-image" class="w-100">
+        </section>
+        <section class="form-section">
+            <p class="fs-2 fw-bold text-white"><i class="ri-user-6-fill me-1"></i>FILL ALL DETAILS</p>
+            
+            <form id="submissionForm" action="submit_form.php" method="POST" class="row justify-content-center px-md-5 p-3">
+                <div class="input-box col-md-3">
+                    <label for="date">DATE</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div class="input-box col-md-3">
+                    <label for="customer_name">CUSTOMER NAME</label>
+                    <input type="text" name="customer_name" id="customer_name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="input-box col-md-3">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="tel" name="phone_number" id="phone_number" placeholder="Enter Your Mobile Number" required>
+                </div>
+                <div class="input-box col-md-3">
+                    <label for="location">LOCATION</label>
+                    <input type="text" name="location" id="location" placeholder="Enter Your Location Details" required>
+                </div>
+                <div class="input-box col-md-3">
+                    <label for="existing_vehicle">EXISTING VEHICLE</label>
+                    <select name="existing_vehicle" id="existing_vehicle" required>
+                        <option value="">Choose Option</option>
+                        <option value="yes">YES</option>
+                        <option value="no">NO</option>
+                    </select>
+                </div>
+                <div class="input-box col-md-3">
+                    <label for="own_car_model">IF OWNS A CAR THEN WHICH ONE</label>
+                    <input type="text" name="own_car_model" id="own_car_model" placeholder="Enter Your Own Car Model">
+                </div>
+                <div class="input-box col-md-3">
+                    <label for="interested_model">INTERESTED MODEL</label>
+                    <select name="interested_model" id="interested_model" required>
+                        <option value="">Select Model</option>
+                        <option value="Glanza">Glanza</option>
+                        <option value="Urban Cruiser Taisor">Urban Cruiser Taisor</option>
+                        <option value="Rumion">Rumion</option>
+                        <option value="Innova Crysta">Innova Crysta</option>
+                        <option value="Innova Hycross">Innova Hycross</option>
+                        <option value="Hilux">Hilux</option>
+                        <option value="Fortuner">Fortuner</option>
+                        <option value="Camry">Camry</option>
+                        <option value="Vellfire">Vellfire</option>
+                        <option value="Land Cruiser 300">Land Cruiser 300</option>
+                    </select>
+                </div>
+                <div class="input-box col-md-3">
+                    <label for="dealership">DEALERSHIP</label>
+                    <select name="dealership" id="dealership" required>
+                        <option value="">Select Here</option>
+                        <option value="dealer1">Dealer 1</option>
+                        <option value="dealer2">Dealer 2</option>
+                    </select>
+                </div>
+                <div class="input-box col-md-3">
+                    <label for="test_drive">TEST DRIVE</label>
+                    <select name="test_drive" id="test_drive" required>
+                        <option value="">Choose Option</option>
+                        <option value="yes">YES</option>
+                        <option value="no">NO</option>
+                    </select>
+                </div>
+                <div class="input-box col-md-3">
+                    <label for="exchange">EXCHANGE</label>
+                    <select name="exchange" id="exchange" required>
+                        <option value="">Choose Option</option>
+                        <option value="yes">YES</option>
+                        <option value="no">NO</option>
+                    </select>
+                </div>
+                <div class="input-box col-md-3">
+                    <label for="hot_warm_cold">HOT/WARM/COLD</label>
+                    <select name="hot_warm_cold" id="hot_warm_cold" required>
+                        <option value="">Choose Option</option>
+                        <option value="hot">HOT</option>
+                        <option value="warm">WARM</option>
+                        <option value="cold">COLD</option>
+                    </select>
+                </div>
+                <div class="submit-btn text-center mt-4">
+                    <button type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </section>
     </main>
-    <script src="js/app.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <script src="js/app.js"></script>
+</body>
 </html>
